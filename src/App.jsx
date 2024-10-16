@@ -4,14 +4,16 @@ import List from './components/List/List'
 
 const categories = ["electronics","food","skincare"]
 function App() {
-  const [count, setCount] = useState(0)
+  
   return (
-    <>
-      <Form/>
-      {
-        categories.map(category=><List/>)
-      }
-    </>
+     <div className="App">
+      <div>
+        <Form/>
+      </div>
+      <div>
+        <List/>
+      </div>
+    </div>
   )
 }
 
